@@ -1,0 +1,123 @@
+.journal-section
+{
+    grid-column: span 12;
+    display: flex;
+    width: 90%;
+    /* height: 13.9rem; */
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.6rem;
+    border: .02rem solid #3333332b;
+}
+
+.journal__btn
+{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border-radius: 1rem;
+    border: none;
+    background: #59168B; 
+    color: #fff;   
+}
+
+a:any-link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sections__rapper
+{
+    grid-column: span 6;
+    display: grid;
+    gap: 1.6rem;
+    
+}
+
+.security__section
+{
+    grid-column: span 6;
+    display: flex;
+    gap: 1.2rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1.4rem;
+    background: #EFF6FF;
+    border: .02rem solid #3333332b;
+
+}
+
+.prompt__section
+{
+    grid-column: span 6;
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prompt__image
+{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1.6rem;
+}
+
+.prompt__question
+{
+    display: flex;
+    height: 5.3386rem;
+    padding: .8rem 1.6rem;
+    border-radius: 1rem;
+    border: .02rem solid #3333332b;
+    background: #FDF2F8;
+    align-items: center;
+}
+
+.entery__section
+{
+    grid-column: span 6;
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entery__rapper
+{
+    display: flex;
+    gap: 1.2rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1.4rem;
+    background: #FDF2F8;
+    border: .02rem solid #3333332b;
+}
+
+.entery__svg
+{
+    background-color: #59168B;
+    padding: .3rem;
+    border-radius: .8rem;
+
+}
+
+.card-icon 
+{
+    background-color: #59168B;
+    color: white;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description__svg
+{
+    margin-right: .5rem;
+}

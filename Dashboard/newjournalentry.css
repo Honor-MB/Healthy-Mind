@@ -1,0 +1,109 @@
+button
+{
+    font-size: inherit;
+}
+
+:root
+{
+    --spacing-unit: 3rem 10rem;
+
+    /* COLOR */
+    
+    --text-color: #fff;
+    --alt-text-color: #000;
+    --brand-color: #082A74;
+    --btn-color: #003148;
+    --footer-color: #002E45;
+    --footer-BG: #9DD4EF;
+}
+
+.journal__form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 2;
+    height: fit-content;
+}
+
+.form__details
+{    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__label
+{
+    display: block;
+    font-weight: 600;
+}
+
+.form__input
+{
+    width: 40rem;
+    padding: 2rem;
+    border-radius: .8rem;
+    background: #EFF6FF;
+    border: none;
+    outline: none;
+    border: .02rem solid #3333332b;
+
+}
+
+.form__textarea
+{
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    background: #EFF6FF;
+    border: none;
+    outline: none;
+    border: .02rem solid #3333332b;
+}
+
+.btn--primary
+{
+color: var(--text-color);
+font-weight: 700;
+padding: .8rem 1.6rem;
+border-radius: .8rem;
+background: var(--btn-color);
+border: none;
+}
+
+.btn--primary:hover
+{
+    background: #002231;
+    cursor: pointer;
+    transform: translateY(-3);
+}
+
+.btn--secondary
+{
+border:.15rem solid var(--btn-color);
+font-weight: 700;
+padding: .8rem 1.6rem;
+border-radius: .8rem;
+background: var(--text-color);
+}
+
+.btn--secondary:hover
+{
+    background: #f0f0f0;
+    cursor: pointer;
+    transform: translateY(-3);
+}
+
+.form__btn
+{
+    display: flex;
+    gap: 2rem;
+}
+.form__btn button a
+{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,529 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root
+{
+    --brand-clr: #003148;
+    --brand-op-clr: #9dd4ef;
+    --primary-text-clr: #fff;
+    --secodary-text-clr: #333;
+}
+
+html
+{
+    font-size: 62.4%;
+    scroll-behavior: smooth;
+}
+
+@media(max-width:1200px)
+{
+    html
+    {
+        font-size: 58%;
+    }
+}
+
+@media(max-width:900px)
+{
+    html
+    {
+        font-size: 54%;
+    }
+}
+
+@media(max-width:800px)
+{
+    html
+    {
+        font-size: 48%;
+    }
+}
+
+@media(max-width:570px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:400px)
+{
+    html
+    {
+        font-size: 38%;
+    }
+}
+
+@media(max-width:300px)
+{
+    html
+    {
+        font-size: 34%;
+    }
+}
+
+button
+{
+    font-size: inherit;
+}
+
+
+
+body {
+    color: var(--secodary-text-clr);
+    line-height: 1.6;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* padding: 0 3rem; */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25rem;
+    background-color: var(--primary-text-clr);
+    padding: 3rem 2rem;
+    border-radius: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.brand-logo {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--brand-clr);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--brand-clr);
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-bottom: .2rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    color: var(--secodary-text-clr);
+    border-radius: .8rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+}
+
+.nav-link.active {
+    background-color: var(--brand-clr);
+    color: var(--primary-text-clr);
+}
+
+.nav-link:hover
+{
+    background-color: var(--brand-op-clr);
+    color: var(--primary-text-clr);
+}
+
+.nav-link svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Main Content */
+.main-content 
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    height: fit-content;
+}
+
+.header
+{
+    grid-column: span 12;
+    
+}
+
+.notification-area 
+{
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--secodary-text-clr);
+    font-size: 1.4rem;
+}
+
+.profile-avatar 
+{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+}
+
+/* Welcome Section */
+.welcome-section 
+{
+    grid-column: span 12;
+    background: linear-gradient(135deg, #9dd4ef 0%, #b8e0f5 100%);
+    padding: 3rem;
+    border-radius: 1.6rem;
+    min-height: 10rem;
+    border: .02rem solid #3333332b;
+}
+
+.welcome-section h1 
+{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #2c5aa0;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.welcome-section p 
+{
+    color: #666;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 2.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+}
+
+.btn-primary {
+    background: #003148;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #003148;
+    border: .2rem solid #003148;
+}
+
+.btn:hover 
+{
+    transform: translateY(-2px);
+    box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Status Cards */
+.status-cards 
+{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+}
+
+.status-card 
+{
+    grid-column: span 3;
+    background: #FDF2F8;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.6rem;
+    border: .02rem solid #3333332b;
+}
+
+.mood-card .card-icon {
+    background: #8b5cf6;
+    color: white;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.streak-card .card-icon {
+    background: #3b82f6;
+    color: white;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-label {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    grid-column: span 12;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+    gap: 1.5rem;
+}
+
+/* Quick Actions Card */
+.quick-actions-card 
+{
+    grid-column: span 6;
+    background: #e0f2fe;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    border: .02rem solid #3333332b;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card-header h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c5aa0;
+}
+
+.header-icons {
+    color: #666;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4.3rem, 1fr));
+    gap: 1.6rem;
+}
+
+.action-item {
+    grid-column: span 3;
+    
+    background: white;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: .02rem solid #3333332b;
+}
+
+.action-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.action-icon {
+    margin-bottom: .8rem;
+    color: #003148;
+}
+
+.action-item p {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+/* Mood Trend Card */
+.mood-trend-card 
+{
+    grid-column: span 6;
+    background: #e0f2fe;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    border: .02rem solid #3333332b;
+}
+
+.chart-container 
+{
+    padding: 2rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-container p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.insight-inspiration__section
+{
+    grid-column: span 12;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+    gap: 1.5rem;
+}
+
+.insight-card__rapper
+{
+    grid-column: span 6;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Insight Cards */
+
+.insight-card {
+    background: #FDF2F8;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    border: .02rem solid #3333332b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .4rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.insight-content h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: .4rem;
+}
+
+.insight-content p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.insight-link {
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1.2rem;
+}
+
+/* Daily Inspiration Card */
+
+.inspiration-card {
+    grid-column: span 6;
+    background: #9dd4ef;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    border: .02rem solid #3333332b;
+}
+
+.inspiration-card .card-header h3 {
+    color: #2c5aa0;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    width: 100%;
+}
+
+.inspiration-content {
+    margin-top: 1.6rem;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #2c5aa0;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+.author {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1015px)
+{
+    .status-card
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:800px)
+{
+   .sidebar 
+   {
+    width: 20rem;
+    font-size: 1rem;
+   }
+}
+
+@media(max-width:570px)
+{
+
+    .status-card 
+    {
+        grid-column: span 6;
+    }
+
+}

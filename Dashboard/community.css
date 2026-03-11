@@ -1,0 +1,259 @@
+:root {
+  --color-primary: #59168b;
+  --color-secondary: #0d47a1;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3f3f5;
+  --color-guidelines-bg: #9dd4ef;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #4a5565;
+  --color-text-muted: #6a7282;
+  --color-text-dark: #061f2b;
+  --color-text-on-primary: #ffffff;
+}
+
+.page-title
+{
+    grid-column: span 12;
+}
+
+/* ==== GUIDELINES CARD ==== */
+.guidelines-card 
+{
+    grid-column: span 12;
+    background-color: var(--color-guidelines-bg);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    line-height: 1.8;
+}
+
+.guidelines-content 
+{
+    width: 50%;
+    display: grid;
+    gap: 1rem;
+}
+
+.guidelines__btn
+{
+    background: #061F2B;
+    color: #fff;
+    text-decoration: none;
+    padding:1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.guidelines-content h3 
+{
+    font-size: 2rem;
+    color: var(--color-text-dark);
+}
+
+.guidelines-content p 
+{
+    font-size: 1.6rem;
+    color: var(--color-text-dark);
+}
+
+@media (max-width: 700px)
+{
+    .guidelines-content 
+    {
+        width:100%;
+    }
+}
+/* ==== TAB SECTION ==== */
+.tabs 
+{
+    grid-column: span 6;
+    background-color: #ececf0;
+    border-radius: 2rem;
+    border: .02rem solid #3333332b;
+    display: flex;justify-content: space-between;
+    padding: .8rem;
+
+}
+
+.tab-item 
+{
+    border: none;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab-item.active 
+{
+    background-color: var(--color-surface);
+    font-weight: 700;
+}
+
+@media (max-width: 700px)
+{
+    .tabs 
+    {
+        grid-column: span 12;
+    }
+}
+
+.left-right__column
+{
+    grid-column:  span 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(4.7rem, 1fr));
+    gap: 2rem;
+}
+
+.left__column
+{
+    grid-column:  span 6;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.right__column
+{
+    grid-column:  span 6;
+    display: grid;
+    gap: 1.6rem;
+    height: fit-content;
+}
+
+/* ==== COMMUNITY LIST & CARD ==== */
+
+.community-card 
+{
+    background-color: var(--color-surface);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    border: .02rem solid #3333332b;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+
+}
+
+.card-content
+{
+    display: grid;
+    gap: .8rem;
+}
+
+.badge-primary
+{
+    position: absolute;
+    right: 2rem;
+    border-radius: .8rem;
+    background: #59168B;
+    padding: .3rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.emoji-icon
+{
+    font-size: 3rem;
+}
+
+.card-stats
+{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.card-stats svg
+{
+    position: relative;
+    top: .5rem;
+    right: .5rem;
+}
+
+.view-community__btn
+{
+    color: #0d47a1;
+    text-decoration: none;
+    padding:1rem 1.5rem;
+    border: .05rem solid #3333332e;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.joined-community__btn
+{
+    background: #59168B;
+    color: #fff;
+    text-decoration: none;
+    padding:1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.card-icon-wrapper,.first-letter__rapper
+{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1.6rem;
+    background: linear-gradient(135deg, #F3E8FF 0%, #F3E8FF 100%);
+}
+
+.contributors-widget
+{
+    display: grid;
+    gap: 2rem;
+    border: .02rem solid #3333332b;
+    padding: 2rem;
+    border-radius: 1.6rem;
+}
+
+.contributor__details
+{
+    display: flex;
+    gap: 2rem;
+    line-height: 2;
+    position: relative;
+    
+}
+
+.first-letter__rapper
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 400;
+    color: #59168b;
+}
+
+.mentor__span
+{
+    background: linear-gradient(135deg, #F3E8FF 0%, #F3E8FF 100%);
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.helpful-post
+{
+    position: absolute;
+    right: 2rem;
+    
+}
+
+.voice-matters-widget
+{
+    background-color: var(--color-guidelines-bg);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.voice-matters-widget__description
+{
+    font-style: italic;
+}

@@ -1,0 +1,68 @@
+.left-right__column
+{
+    grid-column:  span 12;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(3.8rem, 1fr));
+    gap: 2rem;
+}
+
+.left__column
+{
+    grid-column:  span 6;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.right__column
+{
+    grid-column:  span 6;
+    display: grid;
+    gap: 1.6rem;
+    height: fit-content;
+    padding: 1.5rem;
+    border: .02rem solid #3333332b;
+    border-radius: 1rem;
+}
+
+.header1
+{
+    grid-column: span 12;
+}
+
+.card
+{
+    display: grid;
+    gap: .5rem;
+    padding: 1.5rem;
+    border: .02rem solid #3333332b;
+    border-radius: 1rem;
+}
+
+.reset-onboarding__btn
+{
+    background: #061F2B;
+    color: #fff;
+    text-decoration: none;
+    padding:1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.preferences__setting
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .02rem solid #3333332b;
+    padding: .2rem 0;
+}
+
+.preferences__input
+{
+    cursor: pointer;
+}
+
+.preferences__setting:last-child
+{
+    border-bottom: none;   
+}
