@@ -81,12 +81,11 @@ body {
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: auto 1fr;
-    /* padding: 0 3rem; */
 }
 
 /* Sidebar */
 .sidebar {
-    width: 25rem;
+    width: 23rem;
     background-color: var(--primary-text-clr);
     padding: 3rem 2rem;
     border-radius: 1.2rem;
@@ -95,6 +94,8 @@ body {
     left: 0;
     bottom: 0;
     height: 100vh;
+    transition: .5s linear ease-in-out;
+    
 }
 
 .brand {
@@ -102,7 +103,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .brand-logo {
@@ -114,7 +115,6 @@ body {
 }
 
 .brand-name {
-    font-size: 2rem;
     font-weight: 600;
     color: var(--brand-clr);
 }
@@ -136,7 +136,6 @@ body {
     color: var(--secodary-text-clr);
     border-radius: .8rem;
     transition: all 0.3s ease;
-    font-size: 1.4rem;
 }
 
 .nav-link.active {
@@ -155,6 +154,11 @@ body {
     height: 2rem;
 }
 
+.toggle__btn--1
+{
+    display: none;
+}
+
 /* Main Content */
 .main-content 
 {
@@ -168,6 +172,16 @@ body {
 .header
 {
     grid-column: span 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 2rem 0;
+    background-color: var(--primary-text-clr);
     
 }
 
@@ -509,18 +523,8 @@ body {
     }
 }
 
-@media(max-width:800px)
+@media(max-width:700px)
 {
-   .sidebar 
-   {
-    width: 20rem;
-    font-size: 1rem;
-   }
-}
-
-@media(max-width:570px)
-{
-
     .status-card 
     {
         grid-column: span 6;
